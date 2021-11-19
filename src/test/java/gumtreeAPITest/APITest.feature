@@ -10,6 +10,6 @@ And match responseHeaders['Server'][0] == 'rhino-core-shield'
 And match responseHeaders['Content-Type'][0] == 'application/json;charset=UTF-8'
 And print response.ads[0]
 And match each response.ads contains {"id" : "#number"} 
-
+And match each response.ads contains {"title" : "#string"}
  
 
