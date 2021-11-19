@@ -1,0 +1,1656 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <title>gumtreeAPITest.APITest</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="karate-summary.html">
+      <img src="karate-logo.svg" alt="Karate"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">1</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2021-11-19 04:18:33 pm</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:3]"><span>[1:3]</span> <span>Validate the response type, response code, headers and some of the data displayed</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">gumtreeAPITest/APITest.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">API Test</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:3]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:3]</span>
+                <span class="scenario-name">Validate the response type, response code, headers and some of the data displayed</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>1468</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref passed">5</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;https://ecg-api.gumtree.com.au/api/papi/ads/search?categoryId=0&amp;categoryRedirected=1&amp;includeTopAds=1&amp;keyword=Table&amp;locationId=3003435&amp;page=1&amp;size=20&amp;sortType=DATE_DESCENDING&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">153</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref passed">6</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1013</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.6">16:18:32.834 request:
+1 &gt; GET https://ecg-api.gumtree.com.au/api/papi/ads/search?categoryId=0&amp;categoryRedirected=1&amp;includeTopAds=1&amp;keyword=Table&amp;locationId=3003435&amp;page=1&amp;size=20&amp;sortType=DATE_DESCENDING
+1 &gt; Host: ecg-api.gumtree.com.au
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+16:18:33.372 response time in milliseconds: 528
+1 &lt; 200
+1 &lt; Server: rhino-core-shield
+1 &lt; Date: Fri, 19 Nov 2021 05:18:33 GMT
+1 &lt; Content-Type: application/json;charset=UTF-8
+1 &lt; Vary: Accept-Encoding
+1 &lt; x-ebay-capi-request-correlation-id: c7808424-382d-441d-92e9-2bb151a90de3
+1 &lt; x-ebay-core-request-correlation-id: c7808424-382d-441d-92e9-2bb151a90de3
+1 &lt; x-cloud-trace-context: cd804e86be4ca9c15ed0c855cd657793/4889319657016412719;o=0
+1 &lt; Alt-Svc: clear
+1 &lt; Alt-Svc: clear
+1 &lt; Via: 1.1 google
+1 &lt; Transfer-Encoding: chunked
+{
+  &quot;ads&quot;: [
+    {
+      &quot;id&quot;: 1285000152,
+      &quot;title&quot;: &quot;Square High Dining Setting 8 person - Brand New Ex-Display&quot;,
+      &quot;description&quot;: &quot;Brand New ex-showroom high dining setting for sale.\r\nSet includes 1 x table and 8 x ...&quot;,
+      &quot;categoryId&quot;: 20080,
+      &quot;locationId&quot;: 3003689,
+      &quot;price&quot;: {
+        &quot;amount&quot;: 1500.0,
+        &quot;priceType&quot;: &quot;SPECIFIED_AMOUNT&quot;,
+        &quot;highestPrice&quot;: 1500.0
+      },
+      &quot;adType&quot;: &quot;OFFERED&quot;,
+      &quot;posterType&quot;: &quot;PRIVATE&quot;,
+      &quot;creationDate&quot;: &quot;2021-11-16T13:58:34.000+11:00&quot;,
+      &quot;startDate&quot;: &quot;2021-11-16T13:58:50.000+11:00&quot;,
+      &quot;endDate&quot;: &quot;2021-12-16T13:58:50.000+11:00&quot;,
+      &quot;pictures&quot;: [
+        [
+          {
+            &quot;size&quot;: &quot;thumbnail&quot;,
+            &quot;pictureUrl&quot;: &quot;https://i.ebayimg.com/images/g/bfQAAOSwItphkx3s/s-l64.jpg&quot;
+          },
+          {
+            &quot;size&quot;: &quot;normal&quot;,
+            &quot;pictureUrl&quot;: &quot;https://i.ebayimg.com/images/g/bfQAAOSwItphkx3s/s-l135.jpg&quot;
+          },
+          {
+            &quot;size&quot;: &quot;large&quot;,
+            &quot;pictureUrl&quot;: &quot;https://i.ebayimg.com/images/g/bfQAAOSwItphkx3s/s-l400.jpg&quot;
+          },
+          {
+            &quot;size&quot;: &quot;extralarge&quot;,
+            &quot;pictureUrl&quot;: &quot;https://i.ebayimg.com/images/g/bfQAAOSwItphkx3s/s-l800.jpg&quot;
+          },
+          {
+            &quot;size&quot;: &quot;extraextralarge&quot;,
+            &quot;pictureUrl&quot;: &quot;https://i.ebayimg.com/images/g/bfQAAOSwItphkx3s/s-l1600.jpg&quot;
+          }
+        ]
+      ],
+      &quot;attributes&quot;: [
+        {
+          &quot;name&quot;: &quot;home_garden.covid_19_safety&quot;,
+          &quot;value&quot;: &quot;Contactless trade&quot;,
+          &quot;type&quot;: &quot;enum&quot;
+        }
+      ],
+      &quot;searchOrchestrationAttributes&quot;: {},
+      &quot;similarItemsLink&quot;: &quot;https://ecg-api.gumtree.com.au/api/papi/ads/search/1285000152/similar-items&quot;,
+      &quot;featureList&quot;: [
+        {
+          &quot;name&quot;: &quot;AD_GP_TOP_AD&quot;,
+          &quot;display&quot;: true
+        }
+      ]
+    },
+    {
+      &quot;id&quot;: 1284999428,
+      &quot;title&quot;: &quot;5 Piece high dining setting - Ex-Showroom Brand New&quot;,
+      &quot;description&quot;: &quot;Brand New ex-display from showroom - 5 piece high dining setting for sale.\r\n\r\nIncludes 1 x dining ...&quot;,
+      &quot;categoryId&quot;: 20080,
+      &quot;locationId&quot;: 3003689,
+      &quot;price&quot;: {
+        &quot;amount&quot;: 1000.0,
+        &quot;priceType&quot;: &quot;SPECIFIED_AMOUNT&quot;,
+        &quot;highestPrice&quot;: 1000.0
+      },
+      &quot;adType&quot;: &quot;OFFERED&quot;,
+      &quot;posterType&quot;: &quot;PRIVATE&quot;,
+      &quot;creationDate&quot;: &quot;2021-11-16T13:48:40.000+11:00&quot;,
+      &quot;startDate&quot;: &quot;2021-11-16T13:48:57.000+11:00&quot;,
+      &quot;endDate&quot;: &quot;2021-12-16T13:48:57.000+11:00&quot;,
+      &quot;pictures&quot;: [
+        [
+          {
+            &quot;size&quot;: &quot;thumbnail&quot;,
+            &quot;pictureUrl&quot;: &quot;https://i.ebayimg.com/images/g/kj0AAOSwxhhhkxuP/s-l64.jpg&quot;
+          },
+          {
+            &quot;size&quot;: &quot;normal&quot;,
+            &quot;pictureUrl&quot;: &quot;https://i.ebayimg.com/images/g/kj0AAOSwxhhhkxuP/s-l135.jpg&quot;
+          },
+          {
+            &quot;size&quot;: &quot;large&quot;,
+            &quot;pictureUrl&quot;: &quot;https://i.ebayimg.com/images/g/kj0AAOSwxhhhkxuP/s-l400.jpg&quot;
+          },
+          {
+            &quot;size&quot;: &quot;extralarge&quot;,
+            &quot;pictureUrl&quot;: &quot;https://i.ebayimg.com/images/g/kj0AAOSwxhhhkxuP/s-l800.jpg&quot;
+          },
+          {
+            &quot;size&quot;: &quot;extraextralarge&quot;,
+            &quot;pictureUrl&quot;: &quot;https://i.ebayimg.com/images/g/kj0AAOSwxhhhkxuP/s-l1600.jpg&quot;
+          }
+        ]
+      ],
+      &quot;attributes&quot;: [
+        {
+          &quot;name&quot;: &quot;home_garden.covid_19_safety&quot;,
+          &quot;value&quot;: &quot;Contactless trade&quot;,
+          &quot;type&quot;: &quot;enum&quot;
+        }
+      ],
+      &quot;searchOrchestrationAttributes&quot;: {},
+      &quot;similarItemsLink&quot;: &quot;https://ecg-api.gumtree.com.au/api/papi/ads/search/1284999428/similar-items&quot;,
+      &quot;featureList&quot;: [
+        {
+          &quot;name&quot;: &quot;AD_GP_TOP_AD&quot;,
+          &quot;display&quot;: true
+        }
+      ]
+    },
+    {
+      &quot;id&quot;: 1285180592,
+      &quot;title&quot;: &quot;1 Square Cream Shade with Steel Neck and Base Table or Desk Lampshade&quot;,
+      &quot;description&quot;: &quot;1 Square Cream Shade with Steel Neck and Base Table or Desk Lampshade\r\n\r\nThe Lamp has a steel stem ...&quot;,
+      &quot;categoryId&quot;: 21026,
+      &quot;locationId&quot;: 3003653,
+      &quot;price&quot;: {
+        &quot;amount&quot;: 40.0,
+        &quot;priceType&quot;: &quot;PLEASE_CONTACT&quot;,
+        &quot;highestPrice&quot;: 40.0
+      },
+      &quot;adType&quot;: &quot;OFFERED&quot;,
+      &quot;posterType&quot;: &quot;PRIVATE&quot;,
+      &quot;creationDate&quot;: &quot;2021-11-19T15:34:31.000+11:00&quot;,
+      &quot;startDate&quot;: &quot;2021-11-19T15:34:42.000+11:00&quot;,
+      &quot;endDate&quot;: &quot;2021-12-19T15:34:42.000+11:00&quot;,
+      &quot;pictures&quot;: [
+        [
+          {
+            &quot;size&quot;: &quot;thumbnail&quot;,
+            &quot;pictureUrl&quot;: &quot;https://i.ebayimg.com/images/g/kt8AAOSwqUFhlykh/s-l64.jpg&quot;
+          },
+          {
+            &quot;size&quot;: &quot;normal&quot;,
+            &quot;pictureUrl&quot;: &quot;https://i.ebayimg.com/images/g/kt8AAOSwqUFhlykh/s-l135.jpg&quot;
+          },
+          {
+            &quot;size&quot;: &quot;large&quot;,
+            &quot;pictureUrl&quot;: &quot;https://i.ebayimg.com/images/g/kt8AAOSwqUFhlykh/s-l400.jpg&quot;
+          },
+          {
+            &quot;size&quot;: &quot;extralarge&quot;,
+            &quot;pictureUrl&quot;: &quot;https://i.ebayimg.com/images/g/kt8AAOSwqUFhlykh/s-l800.jpg&quot;
+          },
+          {
+            &quot;size&quot;: &quot;extraextralarge&quot;,
+            &quot;pictureUrl&quot;: &quot;https://i.ebayimg.com/images/g/kt8AAOSwqUFhlykh/s-l1600.jpg&quot;
+          }
+        ]
+      ],
+      &quot;attributes&quot;: [],
+      &quot;searchOrchestrationAttributes&quot;: {},
+      &quot;similarItemsLink&quot;: &quot;https://ecg-api.gumtree.com.au/api/papi/ads/search/1285180592/similar-items&quot;,
+      &quot;featureList&quot;: []
+    },
+    {
+      &quot;id&quot;: 1285180475,
+      &quot;title&quot;: &quot;Round Office Table&quot;,
+      &quot;description&quot;: &quot;Round office/dining table\r\n- perfect condition\r\n- hardly used \r\nCan purchase chairs together or ...&quot;,
+      &quot;categoryId&quot;: 20080,
+      &quot;locationId&quot;: 3003795,
+      &quot;price&quot;: {
+        &quot;amount&quot;: 300.0,
+        &quot;priceType&quot;: &quot;PLEASE_CONTACT&quot;,
+        &quot;highestPrice&quot;: 300.0
+      },
+      &quot;adType&quot;: &quot;OFFERED&quot;,
+      &quot;posterType&quot;: &quot;PRIVATE&quot;,
+      &quot;creationDate&quot;: &quot;2021-11-19T15:32:59.000+11:00&quot;,
+      &quot;startDate&quot;: &quot;2021-11-19T15:33:01.000+11:00&quot;,
+      &quot;endDate&quot;: &quot;2021-12-19T15:33:01.000+11:00&quot;,
+      &quot;pictures&quot;: [
+        [
+          {
+            &quot;size&quot;: &quot;thumbnail&quot;,
+            &quot;pictureUrl&quot;: &quot;https://i.ebayimg.com/images/g/MjIAAOSwepZhlyjs/s-l64.jpg&quot;
+          },
+          {
+            &quot;size&quot;: &quot;normal&quot;,
+            &quot;pictureUrl&quot;: &quot;https://i.ebayimg.com/images/g/MjIAAOSwepZhlyjs/s-l135.jpg&quot;
+          },
+          {
+            &quot;size&quot;: &quot;large&quot;,
+            &quot;pictureUrl&quot;: &quot;https://i.ebayimg.com/images/g/MjIAAOSwepZhlyjs/s-l400.jpg&quot;
+          },
+          {
+            &quot;size&quot;: &quot;extralarge&quot;,
+            &quot;pictureUrl&quot;: &quot;https://i.ebayimg.com/images/g/MjIAAOSwepZhlyjs/s-l800.jpg&quot;
+          },
+          {
+            &quot;size&quot;: &quot;extraextralarge&quot;,
+            &quot;pictureUrl&quot;: &quot;https://i.ebayimg.com/images/g/MjIAAOSwepZhlyjs/s-l1600.jpg&quot;
+          }
+        ]
+      ],
+      &quot;attributes&quot;: [
+        {
+          &quot;name&quot;: &quot;home_garden.covid_19_safety&quot;,
+          &quot;value&quot;: &quot;Contactless trade&quot;,
+          &quot;type&quot;: &quot;enum&quot;
+        }
+      ],
+      &quot;searchOrchestrationAttributes&quot;: {},
+      &quot;similarItemsLink&quot;: &quot;https://ecg-api.gumtree.com.au/api/papi/ads/search/1285180475/similar-items&quot;,
+      &quot;featureList&quot;: []
+    },
+    {
+      &quot;id&quot;: 1285180380,
+      &quot;title&quot;: &quot;BRAND NEW Dining Table &amp; Matching Buffet TV unit Coffee Table&quot;,
+      &quot;description&quot;: &quot;BRAND NEW - Ex-Showroom dining goods available for sale.\r\n\r\nManufacturer samples from the showroom ...&quot;,
+      &quot;categoryId&quot;: 20080,
+      &quot;locationId&quot;: 3003689,
+      &quot;price&quot;: {
+        &quot;amount&quot;: 2000.0,
+        &quot;priceType&quot;: &quot;SPECIFIED_AMOUNT&quot;,
+        &quot;highestPrice&quot;: 2000.0
+      },
+      &quot;adType&quot;: &quot;OFFERED&quot;,
+      &quot;posterType&quot;: &quot;PRIVATE&quot;,
+      &quot;creationDate&quot;: &quot;2021-11-19T15:31:15.000+11:00&quot;,
+      &quot;startDate&quot;: &quot;2021-11-19T15:31:31.000+11:00&quot;,
+      &quot;endDate&quot;: &quot;2021-12-19T15:31:31.000+11:00&quot;,
+      &quot;pictures&quot;: [
+        [
+          {
+            &quot;size&quot;: &quot;thumbnail&quot;,
+            &quot;pictureUrl&quot;: &quot;https://i.ebayimg.com/images/g/VpwAAOSwTVhhlyfj/s-l64.jpg&quot;
+          },
+          {
+            &quot;size&quot;: &quot;normal&quot;,
+            &quot;pictureUrl&quot;: &quot;https://i.ebayimg.com/images/g/VpwAAOSwTVhhlyfj/s-l135.jpg&quot;
+          },
+          {
+            &quot;size&quot;: &quot;large&quot;,
+            &quot;pictureUrl&quot;: &quot;https://i.ebayimg.com/images/g/VpwAAOSwTVhhlyfj/s-l400.jpg&quot;
+          },
+          {
+            &quot;size&quot;: &quot;extralarge&quot;,
+            &quot;pictureUrl&quot;: &quot;https://i.ebayimg.com/images/g/VpwAAOSwTVhhlyfj/s-l800.jpg&quot;
+          },
+          {
+            &quot;size&quot;: &quot;extraextralarge&quot;,
+            &quot;pictureUrl&quot;: &quot;https://i.ebayimg.com/images/g/VpwAAOSwTVhhlyfj/s-l1600.jpg&quot;
+          }
+        ]
+      ],
+      &quot;attributes&quot;: [
+        {
+          &quot;name&quot;: &quot;home_garden.covid_19_safety&quot;,
+          &quot;value&quot;: &quot;Contactless trade&quot;,
+          &quot;type&quot;: &quot;enum&quot;
+        }
+      ],
+      &quot;searchOrchestrationAttributes&quot;: {},
+      &quot;similarItemsLink&quot;: &quot;https://ecg-api.gumtree.com.au/api/papi/ads/search/1285180380/similar-items&quot;,
+      &quot;featureList&quot;: []
+    },
+    {
+      &quot;id&quot;: 1285180372,
+      &quot;title&quot;: &quot;Antique Brass and Green Table Lamp&quot;,
+      &quot;description&quot;: &quot;Antique brass table lamp with green shade\n\n420mm high&quot;,
+      &quot;categoryId&quot;: 21026,
+      &quot;locationId&quot;: 3003652,
+      &quot;price&quot;: {
+        &quot;amount&quot;: 20.0,
+        &quot;priceType&quot;: &quot;SPECIFIED_AMOUNT&quot;,
+        &quot;highestPrice&quot;: 20.0
+      },
+      &quot;adType&quot;: &quot;OFFERED&quot;,
+      &quot;posterType&quot;: &quot;PRIVATE&quot;,
+      &quot;creationDate&quot;: &quot;2021-11-19T15:31:09.000+11:00&quot;,
+      &quot;startDate&quot;: &quot;2021-11-19T15:31:15.000+11:00&quot;,
+      &quot;endDate&quot;: &quot;2021-12-19T15:31:15.000+11:00&quot;,
+      &quot;pictures&quot;: [
+        [
+          {
+            &quot;size&quot;: &quot;thumbnail&quot;,
+            &quot;pictureUrl&quot;: &quot;https://i.ebayimg.com/images/g/ZikAAOSwyrthlyg7/s-l64.jpg&quot;
+          },
+          {
+            &quot;size&quot;: &quot;normal&quot;,
+            &quot;pictureUrl&quot;: &quot;https://i.ebayimg.com/images/g/ZikAAOSwyrthlyg7/s-l135.jpg&quot;
+          },
+          {
+            &quot;size&quot;: &quot;large&quot;,
+            &quot;pictureUrl&quot;: &quot;https://i.ebayimg.com/images/g/ZikAAOSwyrthlyg7/s-l400.jpg&quot;
+          },
+          {
+            &quot;size&quot;: &quot;extralarge&quot;,
+            &quot;pictureUrl&quot;: &quot;https://i.ebayimg.com/images/g/ZikAAOSwyrthlyg7/s-l800.jpg&quot;
+          },
+          {
+            &quot;size&quot;: &quot;extraextralarge&quot;,
+            &quot;pictureUrl&quot;: &quot;https://i.ebayimg.com/images/g/ZikAAOSwyrthlyg7/s-l1600.jpg&quot;
+          }
+        ]
+      ],
+      &quot;attributes&quot;: [
+        {
+          &quot;name&quot;: &quot;home_garden.covid_19_safety&quot;,
+          &quot;value&quot;: &quot;Contactless trade&quot;,
+          &quot;type&quot;: &quot;enum&quot;
+        }
+      ],
+      &quot;searchOrchestrationAttributes&quot;: {},
+      &quot;similarItemsLink&quot;: &quot;https://ecg-api.gumtree.com.au/api/papi/ads/search/1285180372/similar-items&quot;,
+      &quot;featureList&quot;: []
+    },
+    {
+      &quot;id&quot;: 1285180349,
+      &quot;title&quot;: &quot;Asian style Console/Hall table&quot;,
+      &quot;description&quot;: &quot;Asian style Hall/Console table with 2 drawers. Good condition, no scratches/marks/stains. It is ...&quot;,
+      &quot;categoryId&quot;: 21011,
+      &quot;locationId&quot;: 3003999,
+      &quot;price&quot;: {
+        &quot;amount&quot;: 120.0,
+        &quot;priceType&quot;: &quot;SPECIFIED_AMOUNT&quot;,
+        &quot;highestPrice&quot;: 120.0
+      },
+      &quot;adType&quot;: &quot;OFFERED&quot;,
+      &quot;posterType&quot;: &quot;PRIVATE&quot;,
+      &quot;creationDate&quot;: &quot;2021-11-19T15:30:47.000+11:00&quot;,
+      &quot;startDate&quot;: &quot;2021-11-19T15:30:50.000+11:00&quot;,
+      &quot;endDate&quot;: &quot;2021-12-19T15:30:50.000+11:00&quot;,
+      &quot;pictures&quot;: [
+        [
+          {
+            &quot;size&quot;: &quot;thumbnail&quot;,
+            &quot;pictureUrl&quot;: &quot;https://i.ebayimg.com/images/g/30QAAOSwBbdhlycy/s-l64.jpg&quot;
+          },
+          {
+            &quot;size&quot;: &quot;normal&quot;,
+            &quot;pictureUrl&quot;: &quot;https://i.ebayimg.com/images/g/30QAAOSwBbdhlycy/s-l135.jpg&quot;
+          },
+          {
+            &quot;size&quot;: &quot;large&quot;,
+            &quot;pictureUrl&quot;: &quot;https://i.ebayimg.com/images/g/30QAAOSwBbdhlycy/s-l400.jpg&quot;
+          },
+          {
+            &quot;size&quot;: &quot;extralarge&quot;,
+            &quot;pictureUrl&quot;: &quot;https://i.ebayimg.com/images/g/30QAAOSwBbdhlycy/s-l800.jpg&quot;
+          },
+          {
+            &quot;size&quot;: &quot;extraextralarge&quot;,
+            &quot;pictureUrl&quot;: &quot;https://i.ebayimg.com/images/g/30QAAOSwBbdhlycy/s-l1600.jpg&quot;
+          }
+        ]
+      ],
+      &quot;attributes&quot;: [],
+      &quot;searchOrchestrationAttributes&quot;: {},
+      &quot;similarItemsLink&quot;: &quot;https://ecg-api.gumtree.com.au/api/papi/ads/search/1285180349/similar-items&quot;,
+      &quot;featureList&quot;: []
+    },
+    {
+      &quot;id&quot;: 1282664142,
+      &quot;title&quot;: &quot;Mercedes-Benz SPRINTER&quot;,
+      &quot;description&quot;: &quot;2006 MERCEDES SPRINTER TABLE TOP TRUCK ,5 SPEED MANUAL,TURBO DIESEL, DUAL WHEELS, SEATS THREE, NEAT ...&quot;,
+      &quot;categoryId&quot;: 18320,
+      &quot;locationId&quot;: 3004054,
+      &quot;price&quot;: {
+        &quot;amount&quot;: 9800.0,
+        &quot;priceType&quot;: &quot;SPECIFIED_AMOUNT&quot;,
+        &quot;highestPrice&quot;: 9800.0
+      },
+      &quot;adType&quot;: &quot;OFFERED&quot;,
+      &quot;posterType&quot;: &quot;PRIVATE&quot;,
+      &quot;creationDate&quot;: &quot;2021-10-08T15:15:08.000+11:00&quot;,
+      &quot;startDate&quot;: &quot;2021-11-19T15:30:13.000+11:00&quot;,
+      &quot;endDate&quot;: &quot;2021-11-22T15:15:23.000+11:00&quot;,
+      &quot;adListingType&quot;: &quot;B2C_PACKAGE_2&quot;,
+      &quot;pictures&quot;: [
+        [
+          {
+            &quot;size&quot;: &quot;thumbnail&quot;,
+            &quot;pictureUrl&quot;: &quot;https://i.ebayimg.com/images/g/NVEAAOSwvxNhX8Oq/s-l64.jpg&quot;
+          },
+          {
+            &quot;size&quot;: &quot;normal&quot;,
+            &quot;pictureUrl&quot;: &quot;https://i.ebayimg.com/images/g/NVEAAOSwvxNhX8Oq/s-l135.jpg&quot;
+          },
+          {
+            &quot;size&quot;: &quot;large&quot;,
+            &quot;pictureUrl&quot;: &quot;https://i.ebayimg.com/images/g/NVEAAOSwvxNhX8Oq/s-l400.jpg&quot;
+          },
+          {
+            &quot;size&quot;: &quot;extralarge&quot;,
+            &quot;pictureUrl&quot;: &quot;https://i.ebayimg.com/images/g/NVEAAOSwvxNhX8Oq/s-l800.jpg&quot;
+          },
+          {
+            &quot;size&quot;: &quot;extraextralarge&quot;,
+            &quot;pictureUrl&quot;: &quot;https://i.ebayimg.com/images/g/NVEAAOSwvxNhX8Oq/s-l1600.jpg&quot;
+          }
+        ]
+      ],
+      &quot;attributes&quot;: [
+        {
+          &quot;name&quot;: &quot;cars.carmodel&quot;,
+          &quot;value&quot;: &quot;Other&quot;,
+          &quot;type&quot;: &quot;enum&quot;
+        },
+        {
+          &quot;name&quot;: &quot;cars.carmileageinkms&quot;,
+          &quot;value&quot;: &quot;300&quot;,
+          &quot;type&quot;: &quot;long&quot;
+        },
+        {
+          &quot;name&quot;: &quot;cars.forsaleby&quot;,
+          &quot;value&quot;: &quot;Private seller&quot;,
+          &quot;type&quot;: &quot;enum&quot;
+        },
+        {
+          &quot;name&quot;: &quot;cars.carmake&quot;,
+          &quot;value&quot;: &quot;Mercedes-Benz&quot;,
+          &quot;type&quot;: &quot;enum&quot;
+        }
+      ],
+      &quot;searchOrchestrationAttributes&quot;: {},
+      &quot;similarItemsLink&quot;: &quot;https://ecg-api.gumtree.com.au/api/papi/ads/search/1282664142/similar-items&quot;,
+      &quot;featureList&quot;: [
+        {
+          &quot;name&quot;: &quot;B2C_PACKAGE_2&quot;,
+          &quot;display&quot;: false
+        },
+        {
+          &quot;name&quot;: &quot;AD_LISTING_FEE&quot;,
+          &quot;display&quot;: false
+        },
+        {
+          &quot;name&quot;: &quot;AD_RECURRING_BUMP_UP&quot;,
+          &quot;display&quot;: false
+        },
+        {
+          &quot;name&quot;: &quot;PREMIUM_AD&quot;,
+          &quot;display&quot;: false
+        },
+        {
+          &quot;name&quot;: &quot;AD_GP_TOP_AD&quot;,
+          &quot;display&quot;: true
+        }
+      ]
+    },
+    {
+      &quot;id&quot;: 1283743371,
+      &quot;title&quot;: &quot;2017 Isuzu D-MAX EXTRA CAB Ute White 5 Speed Automatic Cab Chassis&quot;,
+      &quot;description&quot;: &quot;2017 Isuzu D-Max Extra Cab Ute | Ex Council Ute | 3.5 Tonne Towing Capacity\r\n\r\nFull Service ...&quot;,
+      &quot;categoryId&quot;: 18320,
+      &quot;locationId&quot;: 3004043,
+      &quot;price&quot;: {
+        &quot;amount&quot;: 28990.0,
+        &quot;priceType&quot;: &quot;SPECIFIED_AMOUNT&quot;,
+        &quot;highestPrice&quot;: 28990.0
+      },
+      &quot;adType&quot;: &quot;OFFERED&quot;,
+      &quot;posterType&quot;: &quot;PRIVATE&quot;,
+      &quot;creationDate&quot;: &quot;2021-10-26T14:50:48.000+11:00&quot;,
+      &quot;startDate&quot;: &quot;2021-11-19T15:30:01.000+11:00&quot;,
+      &quot;endDate&quot;: &quot;2021-12-10T14:50:48.000+11:00&quot;,
+      &quot;adListingType&quot;: &quot;B2C_PACKAGE_3&quot;,
+      &quot;pictures&quot;: [
+        [
+          {
+            &quot;size&quot;: &quot;thumbnail&quot;,
+            &quot;pictureUrl&quot;: &quot;https://i.ebayimg.com/images/g/UMAAAOSwlXBhd3sQ/s-l64.jpg&quot;
+          },
+          {
+            &quot;size&quot;: &quot;normal&quot;,
+            &quot;pictureUrl&quot;: &quot;https://i.ebayimg.com/images/g/UMAAAOSwlXBhd3sQ/s-l135.jpg&quot;
+          },
+          {
+            &quot;size&quot;: &quot;large&quot;,
+            &quot;pictureUrl&quot;: &quot;https://i.ebayimg.com/images/g/UMAAAOSwlXBhd3sQ/s-l400.jpg&quot;
+          },
+          {
+            &quot;size&quot;: &quot;extralarge&quot;,
+            &quot;pictureUrl&quot;: &quot;https://i.ebayimg.com/images/g/UMAAAOSwlXBhd3sQ/s-l800.jpg&quot;
+          },
+          {
+            &quot;size&quot;: &quot;extraextralarge&quot;,
+            &quot;pictureUrl&quot;: &quot;https://i.ebayimg.com/images/g/UMAAAOSwlXBhd3sQ/s-l1600.jpg&quot;
+          }
+        ]
+      ],
+      &quot;attributes&quot;: [
+        {
+          &quot;name&quot;: &quot;cars.carmodel&quot;,
+          &quot;value&quot;: &quot;D-Max&quot;,
+          &quot;type&quot;: &quot;enum&quot;
+        },
+        {
+          &quot;name&quot;: &quot;cars.cylinder_configuration&quot;,
+          &quot;value&quot;: &quot;4&quot;,
+          &quot;type&quot;: &quot;string&quot;
+        },
+        {
+          &quot;name&quot;: &quot;cars.variant&quot;,
+          &quot;value&quot;: &quot;Ute&quot;,
+          &quot;type&quot;: &quot;string&quot;
+        },
+        {
+          &quot;name&quot;: &quot;cars.carmileageinkms&quot;,
+          &quot;value&quot;: &quot;110988&quot;,
+          &quot;type&quot;: &quot;long&quot;
+        },
+        {
+          &quot;name&quot;: &quot;cars.fueltype&quot;,
+          &quot;value&quot;: &quot;Diesel&quot;,
+          &quot;type&quot;: &quot;enum&quot;
+        },
+        {
+          &quot;name&quot;: &quot;cars.drivetrain&quot;,
+          &quot;value&quot;: &quot;Other&quot;,
+          &quot;type&quot;: &quot;enum&quot;
+        },
+        {
+          &quot;name&quot;: &quot;cars.forsaleby&quot;,
+          &quot;value&quot;: &quot;Dealer used&quot;,
+          &quot;type&quot;: &quot;enum&quot;
+        },
+        {
+          &quot;name&quot;: &quot;cars.colour&quot;,
+          &quot;value&quot;: &quot;White&quot;,
+          &quot;type&quot;: &quot;enum&quot;
+        },
+        {
+          &quot;name&quot;: &quot;cars.carmake&quot;,
+          &quot;value&quot;: &quot;Isuzu&quot;,
+          &quot;type&quot;: &quot;enum&quot;
+        },
+        {
+          &quot;name&quot;: &quot;cars.cartransmission&quot;,
+          &quot;value&quot;: &quot;Automatic&quot;,
+          &quot;type&quot;: &quot;enum&quot;
+        },
+        {
+          &quot;name&quot;: &quot;cars.caryear&quot;,
+          &quot;value&quot;: &quot;2017&quot;,
+          &quot;type&quot;: &quot;long&quot;
+        },
+        {
+          &quot;name&quot;: &quot;cars.registered&quot;,
+          &quot;value&quot;: &quot;No&quot;,
+          &quot;type&quot;: &quot;enum&quot;
+        },
+        {
+          &quot;name&quot;: &quot;cars.vin&quot;,
+          &quot;value&quot;: &quot;MPATFR85JHT001369&quot;,
+          &quot;type&quot;: &quot;string&quot;
+        },
+        {
+          &quot;name&quot;: &quot;cars.carbodytype&quot;,
+          &quot;value&quot;: &quot;Ute&quot;,
+          &quot;type&quot;: &quot;enum&quot;
+        }
+      ],
+      &quot;searchOrchestrationAttributes&quot;: {},
+      &quot;similarItemsLink&quot;: &quot;https://ecg-api.gumtree.com.au/api/papi/ads/search/1283743371/similar-items&quot;,
+      &quot;featureList&quot;: [
+        {
+          &quot;name&quot;: &quot;B2C_PACKAGE_3&quot;,
+          &quot;display&quot;: false
+        },
+        {
+          &quot;name&quot;: &quot;AD_LISTING_FEE&quot;,
+          &quot;display&quot;: false
+        },
+        {
+          &quot;name&quot;: &quot;AD_RECURRING_BUMP_UP&quot;,
+          &quot;display&quot;: false
+        },
+        {
+          &quot;name&quot;: &quot;SUPER_PREMIUM_AD&quot;,
+          &quot;display&quot;: false
+        },
+        {
+          &quot;name&quot;: &quot;AD_GP_TOP_AD&quot;,
+          &quot;display&quot;: true
+        }
+      ]
+    },
+    {
+      &quot;id&quot;: 1285180215,
+      &quot;title&quot;: &quot;2 XSTYLISH BLACK TABLE LAMPS&quot;,
+      &quot;description&quot;: &quot;COLLECTION FROM ST IVES\r\nThese are 2 black stylish table lamps. In good condition. They are 14cm ...&quot;,
+      &quot;categoryId&quot;: 21026,
+      &quot;locationId&quot;: 3003824,
+      &quot;price&quot;: {
+        &quot;amount&quot;: 40.0,
+        &quot;priceType&quot;: &quot;SPECIFIED_AMOUNT&quot;,
+        &quot;highestPrice&quot;: 40.0
+      },
+      &quot;adType&quot;: &quot;OFFERED&quot;,
+      &quot;posterType&quot;: &quot;PRIVATE&quot;,
+      &quot;creationDate&quot;: &quot;2021-11-19T15:29:02.000+11:00&quot;,
+      &quot;startDate&quot;: &quot;2021-11-19T15:29:07.000+11:00&quot;,
+      &quot;endDate&quot;: &quot;2021-12-19T15:29:07.000+11:00&quot;,
+      &quot;pictures&quot;: [
+        [
+          {
+            &quot;size&quot;: &quot;thumbnail&quot;,
+            &quot;pictureUrl&quot;: &quot;https://i.ebayimg.com/images/g/hWQAAOSwGzRhlyV5/s-l64.jpg&quot;
+          },
+          {
+            &quot;size&quot;: &quot;normal&quot;,
+            &quot;pictureUrl&quot;: &quot;https://i.ebayimg.com/images/g/hWQAAOSwGzRhlyV5/s-l135.jpg&quot;
+          },
+          {
+            &quot;size&quot;: &quot;large&quot;,
+            &quot;pictureUrl&quot;: &quot;https://i.ebayimg.com/images/g/hWQAAOSwGzRhlyV5/s-l400.jpg&quot;
+          },
+          {
+            &quot;size&quot;: &quot;extralarge&quot;,
+            &quot;pictureUrl&quot;: &quot;https://i.ebayimg.com/images/g/hWQAAOSwGzRhlyV5/s-l800.jpg&quot;
+          },
+          {
+            &quot;size&quot;: &quot;extraextralarge&quot;,
+            &quot;pictureUrl&quot;: &quot;https://i.ebayimg.com/images/g/hWQAAOSwGzRhlyV5/s-l1600.jpg&quot;
+          }
+        ]
+      ],
+      &quot;attributes&quot;: [],
+      &quot;searchOrchestrationAttributes&quot;: {},
+      &quot;similarItemsLink&quot;: &quot;https://ecg-api.gumtree.com.au/api/papi/ads/search/1285180215/similar-items&quot;,
+      &quot;featureList&quot;: []
+    },
+    {
+      &quot;id&quot;: 1285180168,
+      &quot;title&quot;: &quot;Nova 1800 Faux White Marble Dining Table&quot;,
+      &quot;description&quot;: &quot;Bought five months ago rarely used.\r\n\r\nBalance between tradition and ...&quot;,
+      &quot;categoryId&quot;: 20080,
+      &quot;locationId&quot;: 3003626,
+      &quot;price&quot;: {
+        &quot;amount&quot;: 900.0,
+        &quot;priceType&quot;: &quot;PLEASE_CONTACT&quot;,
+        &quot;highestPrice&quot;: 900.0
+      },
+      &quot;adType&quot;: &quot;OFFERED&quot;,
+      &quot;posterType&quot;: &quot;PRIVATE&quot;,
+      &quot;creationDate&quot;: &quot;2021-11-19T15:28:12.000+11:00&quot;,
+      &quot;startDate&quot;: &quot;2021-11-19T15:28:15.000+11:00&quot;,
+      &quot;endDate&quot;: &quot;2021-12-19T15:28:15.000+11:00&quot;,
+      &quot;pictures&quot;: [
+        [
+          {
+            &quot;size&quot;: &quot;thumbnail&quot;,
+            &quot;pictureUrl&quot;: &quot;https://i.ebayimg.com/images/g/ccIAAOSwRFVhlyd8/s-l64.jpg&quot;
+          },
+          {
+            &quot;size&quot;: &quot;normal&quot;,
+            &quot;pictureUrl&quot;: &quot;https://i.ebayimg.com/images/g/ccIAAOSwRFVhlyd8/s-l135.jpg&quot;
+          },
+          {
+            &quot;size&quot;: &quot;large&quot;,
+            &quot;pictureUrl&quot;: &quot;https://i.ebayimg.com/images/g/ccIAAOSwRFVhlyd8/s-l400.jpg&quot;
+          },
+          {
+            &quot;size&quot;: &quot;extralarge&quot;,
+            &quot;pictureUrl&quot;: &quot;https://i.ebayimg.com/images/g/ccIAAOSwRFVhlyd8/s-l800.jpg&quot;
+          },
+          {
+            &quot;size&quot;: &quot;extraextralarge&quot;,
+            &quot;pictureUrl&quot;: &quot;https://i.ebayimg.com/images/g/ccIAAOSwRFVhlyd8/s-l1600.jpg&quot;
+          }
+        ]
+      ],
+      &quot;attributes&quot;: [],
+      &quot;searchOrchestrationAttributes&quot;: {},
+      &quot;similarItemsLink&quot;: &quot;https://ecg-api.gumtree.com.au/api/papi/ads/search/1285180168/similar-items&quot;,
+      &quot;featureList&quot;: []
+    },
+    {
+      &quot;id&quot;: 1285180102,
+      &quot;title&quot;: &quot;Glassed top Coffee Table&quot;,
+      &quot;description&quot;: &quot;Glassed Top Lion coffee table in good condition\n1320mm L x 660mm W&quot;,
+      &quot;categoryId&quot;: 21009,
+      &quot;locationId&quot;: 3008858,
+      &quot;price&quot;: {
+        &quot;amount&quot;: 150.0,
+        &quot;priceType&quot;: &quot;PLEASE_CONTACT&quot;,
+        &quot;highestPrice&quot;: 150.0
+      },
+      &quot;adType&quot;: &quot;OFFERED&quot;,
+      &quot;posterType&quot;: &quot;PRIVATE&quot;,
+      &quot;creationDate&quot;: &quot;2021-11-19T15:27:10.000+11:00&quot;,
+      &quot;startDate&quot;: &quot;2021-11-19T15:27:12.000+11:00&quot;,
+      &quot;endDate&quot;: &quot;2021-12-19T15:27:12.000+11:00&quot;,
+      &quot;pictures&quot;: [
+        [
+          {
+            &quot;size&quot;: &quot;thumbnail&quot;,
+            &quot;pictureUrl&quot;: &quot;https://i.ebayimg.com/images/g/JmMAAOSwu~BhlycZ/s-l64.jpg&quot;
+          },
+          {
+            &quot;size&quot;: &quot;normal&quot;,
+            &quot;pictureUrl&quot;: &quot;https://i.ebayimg.com/images/g/JmMAAOSwu~BhlycZ/s-l135.jpg&quot;
+          },
+          {
+            &quot;size&quot;: &quot;large&quot;,
+            &quot;pictureUrl&quot;: &quot;https://i.ebayimg.com/images/g/JmMAAOSwu~BhlycZ/s-l400.jpg&quot;
+          },
+          {
+            &quot;size&quot;: &quot;extralarge&quot;,
+            &quot;pictureUrl&quot;: &quot;https://i.ebayimg.com/images/g/JmMAAOSwu~BhlycZ/s-l800.jpg&quot;
+          },
+          {
+            &quot;size&quot;: &quot;extraextralarge&quot;,
+            &quot;pictureUrl&quot;: &quot;https://i.ebayimg.com/images/g/JmMAAOSwu~BhlycZ/s-l1600.jpg&quot;
+          }
+        ]
+      ],
+      &quot;attributes&quot;: [],
+      &quot;searchOrchestrationAttributes&quot;: {},
+      &quot;similarItemsLink&quot;: &quot;https://ecg-api.gumtree.com.au/api/papi/ads/search/1285180102/similar-items&quot;,
+      &quot;featureList&quot;: []
+    },
+    {
+      &quot;id&quot;: 1285180074,
+      &quot;title&quot;: &quot;Ornamental round timber lamp tables&quot;,
+      &quot;description&quot;: &quot;Ornamental round timber lamp tables.\r\nSmoke free  home.\r\n545mm high 450mm diameter\r\n\r\nTwo available.&quot;,
+      &quot;categoryId&quot;: 21009,
+      &quot;locationId&quot;: 3003593,
+      &quot;price&quot;: {
+        &quot;amount&quot;: 75.0,
+        &quot;priceType&quot;: &quot;PLEASE_CONTACT&quot;,
+        &quot;highestPrice&quot;: 75.0
+      },
+      &quot;adType&quot;: &quot;OFFERED&quot;,
+      &quot;posterType&quot;: &quot;PRIVATE&quot;,
+      &quot;creationDate&quot;: &quot;2021-11-19T15:26:48.000+11:00&quot;,
+      &quot;startDate&quot;: &quot;2021-11-19T15:26:49.000+11:00&quot;,
+      &quot;endDate&quot;: &quot;2021-12-19T15:26:49.000+11:00&quot;,
+      &quot;pictures&quot;: [
+        [
+          {
+            &quot;size&quot;: &quot;thumbnail&quot;,
+            &quot;pictureUrl&quot;: &quot;https://i.ebayimg.com/images/g/Ie4AAOSwG4Nhlydj/s-l64.jpg&quot;
+          },
+          {
+            &quot;size&quot;: &quot;normal&quot;,
+            &quot;pictureUrl&quot;: &quot;https://i.ebayimg.com/images/g/Ie4AAOSwG4Nhlydj/s-l135.jpg&quot;
+          },
+          {
+            &quot;size&quot;: &quot;large&quot;,
+            &quot;pictureUrl&quot;: &quot;https://i.ebayimg.com/images/g/Ie4AAOSwG4Nhlydj/s-l400.jpg&quot;
+          },
+          {
+            &quot;size&quot;: &quot;extralarge&quot;,
+            &quot;pictureUrl&quot;: &quot;https://i.ebayimg.com/images/g/Ie4AAOSwG4Nhlydj/s-l800.jpg&quot;
+          },
+          {
+            &quot;size&quot;: &quot;extraextralarge&quot;,
+            &quot;pictureUrl&quot;: &quot;https://i.ebayimg.com/images/g/Ie4AAOSwG4Nhlydj/s-l1600.jpg&quot;
+          }
+        ]
+      ],
+      &quot;attributes&quot;: [],
+      &quot;searchOrchestrationAttributes&quot;: {},
+      &quot;similarItemsLink&quot;: &quot;https://ecg-api.gumtree.com.au/api/papi/ads/search/1285180074/similar-items&quot;,
+      &quot;featureList&quot;: []
+    },
+    {
+      &quot;id&quot;: 1285180005,
+      &quot;title&quot;: &quot;Unique Vintage Brand New Real Brass Cloisonne Vase $99&quot;,
+      &quot;description&quot;: &quot;1) Unique Collectable Decorative Vintage Chinese style Brand New Real Brass Cloisonne ...&quot;,
+      &quot;categoryId&quot;: 20039,
+      &quot;locationId&quot;: 3003947,
+      &quot;price&quot;: {
+        &quot;amount&quot;: 99.0,
+        &quot;priceType&quot;: &quot;SPECIFIED_AMOUNT&quot;,
+        &quot;highestPrice&quot;: 99.0
+      },
+      &quot;adType&quot;: &quot;OFFERED&quot;,
+      &quot;posterType&quot;: &quot;PRIVATE&quot;,
+      &quot;creationDate&quot;: &quot;2021-11-19T15:25:43.000+11:00&quot;,
+      &quot;startDate&quot;: &quot;2021-11-19T15:26:06.000+11:00&quot;,
+      &quot;endDate&quot;: &quot;2021-12-19T15:26:06.000+11:00&quot;,
+      &quot;pictures&quot;: [
+        [
+          {
+            &quot;size&quot;: &quot;thumbnail&quot;,
+            &quot;pictureUrl&quot;: &quot;https://i.ebayimg.com/images/g/oL4AAOSwgXhhlycr/s-l64.jpg&quot;
+          },
+          {
+            &quot;size&quot;: &quot;normal&quot;,
+            &quot;pictureUrl&quot;: &quot;https://i.ebayimg.com/images/g/oL4AAOSwgXhhlycr/s-l135.jpg&quot;
+          },
+          {
+            &quot;size&quot;: &quot;large&quot;,
+            &quot;pictureUrl&quot;: &quot;https://i.ebayimg.com/images/g/oL4AAOSwgXhhlycr/s-l400.jpg&quot;
+          },
+          {
+            &quot;size&quot;: &quot;extralarge&quot;,
+            &quot;pictureUrl&quot;: &quot;https://i.ebayimg.com/images/g/oL4AAOSwgXhhlycr/s-l800.jpg&quot;
+          },
+          {
+            &quot;size&quot;: &quot;extraextralarge&quot;,
+            &quot;pictureUrl&quot;: &quot;https://i.ebayimg.com/images/g/oL4AAOSwgXhhlycr/s-l1600.jpg&quot;
+          }
+        ]
+      ],
+      &quot;attributes&quot;: [],
+      &quot;searchOrchestrationAttributes&quot;: {},
+      &quot;similarItemsLink&quot;: &quot;https://ecg-api.gumtree.com.au/api/papi/ads/search/1285180005/similar-items&quot;,
+      &quot;featureList&quot;: []
+    },
+    {
+      &quot;id&quot;: 1285180008,
+      &quot;title&quot;: &quot;1 Traditional Green Pine Christmas Tree&quot;,
+      &quot;description&quot;: &quot;1 Traditional Green Pine Christmas Tree\r\n\r\nThe Christmas Tree has only been used once and is in ...&quot;,
+      &quot;categoryId&quot;: 21022,
+      &quot;locationId&quot;: 3003653,
+      &quot;price&quot;: {
+        &quot;amount&quot;: 40.0,
+        &quot;priceType&quot;: &quot;PLEASE_CONTACT&quot;,
+        &quot;highestPrice&quot;: 40.0
+      },
+      &quot;adType&quot;: &quot;OFFERED&quot;,
+      &quot;posterType&quot;: &quot;PRIVATE&quot;,
+      &quot;creationDate&quot;: &quot;2021-11-19T15:25:46.000+11:00&quot;,
+      &quot;startDate&quot;: &quot;2021-11-19T15:25:55.000+11:00&quot;,
+      &quot;endDate&quot;: &quot;2021-12-19T15:25:55.000+11:00&quot;,
+      &quot;pictures&quot;: [
+        [
+          {
+            &quot;size&quot;: &quot;thumbnail&quot;,
+            &quot;pictureUrl&quot;: &quot;https://i.ebayimg.com/images/g/9kUAAOSwm6dhlyWZ/s-l64.jpg&quot;
+          },
+          {
+            &quot;size&quot;: &quot;normal&quot;,
+            &quot;pictureUrl&quot;: &quot;https://i.ebayimg.com/images/g/9kUAAOSwm6dhlyWZ/s-l135.jpg&quot;
+          },
+          {
+            &quot;size&quot;: &quot;large&quot;,
+            &quot;pictureUrl&quot;: &quot;https://i.ebayimg.com/images/g/9kUAAOSwm6dhlyWZ/s-l400.jpg&quot;
+          },
+          {
+            &quot;size&quot;: &quot;extralarge&quot;,
+            &quot;pictureUrl&quot;: &quot;https://i.ebayimg.com/images/g/9kUAAOSwm6dhlyWZ/s-l800.jpg&quot;
+          },
+          {
+            &quot;size&quot;: &quot;extraextralarge&quot;,
+            &quot;pictureUrl&quot;: &quot;https://i.ebayimg.com/images/g/9kUAAOSwm6dhlyWZ/s-l1600.jpg&quot;
+          }
+        ]
+      ],
+      &quot;attributes&quot;: [],
+      &quot;searchOrchestrationAttributes&quot;: {},
+      &quot;similarItemsLink&quot;: &quot;https://ecg-api.gumtree.com.au/api/papi/ads/search/1285180008/similar-items&quot;,
+      &quot;featureList&quot;: []
+    },
+    {
+      &quot;id&quot;: 1283495771,
+      &quot;title&quot;: &quot;2002 Isuzu N Series NPR 300&quot;,
+      &quot;description&quot;: &quot;2002 Isuzu NPR300 fitted with steel tipper body, drop sides, 120 hp turbo diesel, power ...&quot;,
+      &quot;categoryId&quot;: 21128,
+      &quot;locationId&quot;: 3003457,
+      &quot;price&quot;: {
+        &quot;amount&quot;: 24900.0,
+        &quot;priceType&quot;: &quot;SPECIFIED_AMOUNT&quot;,
+        &quot;highestPrice&quot;: 24900.0
+      },
+      &quot;adType&quot;: &quot;OFFERED&quot;,
+      &quot;posterType&quot;: &quot;PRIVATE&quot;,
+      &quot;creationDate&quot;: &quot;2021-10-22T15:22:58.000+11:00&quot;,
+      &quot;startDate&quot;: &quot;2021-11-19T15:22:59.000+11:00&quot;,
+      &quot;endDate&quot;: &quot;2021-12-06T15:22:59.000+11:00&quot;,
+      &quot;adListingType&quot;: &quot;B2C_PACKAGE_3&quot;,
+      &quot;pictures&quot;: [
+        [
+          {
+            &quot;size&quot;: &quot;thumbnail&quot;,
+            &quot;pictureUrl&quot;: &quot;https://i.ebayimg.com/images/g/aI4AAOSwgAVhjji2/s-l64.jpg&quot;
+          },
+          {
+            &quot;size&quot;: &quot;normal&quot;,
+            &quot;pictureUrl&quot;: &quot;https://i.ebayimg.com/images/g/aI4AAOSwgAVhjji2/s-l135.jpg&quot;
+          },
+          {
+            &quot;size&quot;: &quot;large&quot;,
+            &quot;pictureUrl&quot;: &quot;https://i.ebayimg.com/images/g/aI4AAOSwgAVhjji2/s-l400.jpg&quot;
+          },
+          {
+            &quot;size&quot;: &quot;extralarge&quot;,
+            &quot;pictureUrl&quot;: &quot;https://i.ebayimg.com/images/g/aI4AAOSwgAVhjji2/s-l800.jpg&quot;
+          },
+          {
+            &quot;size&quot;: &quot;extraextralarge&quot;,
+            &quot;pictureUrl&quot;: &quot;https://i.ebayimg.com/images/g/aI4AAOSwgAVhjji2/s-l1600.jpg&quot;
+          }
+        ]
+      ],
+      &quot;attributes&quot;: [
+        {
+          &quot;name&quot;: &quot;trucks.forsaleby&quot;,
+          &quot;value&quot;: &quot;Dealer used&quot;,
+          &quot;type&quot;: &quot;enum&quot;
+        },
+        {
+          &quot;name&quot;: &quot;trucks.colour&quot;,
+          &quot;value&quot;: &quot;White&quot;,
+          &quot;type&quot;: &quot;enum&quot;
+        },
+        {
+          &quot;name&quot;: &quot;trucks.registered&quot;,
+          &quot;value&quot;: &quot;No&quot;,
+          &quot;type&quot;: &quot;enum&quot;
+        },
+        {
+          &quot;name&quot;: &quot;trucks.fueltype&quot;,
+          &quot;value&quot;: &quot;Diesel&quot;,
+          &quot;type&quot;: &quot;enum&quot;
+        },
+        {
+          &quot;name&quot;: &quot;trucks.truckmake&quot;,
+          &quot;value&quot;: &quot;Other&quot;,
+          &quot;type&quot;: &quot;enum&quot;
+        },
+        {
+          &quot;name&quot;: &quot;trucks.truckmodel&quot;,
+          &quot;value&quot;: &quot;N Series&quot;,
+          &quot;type&quot;: &quot;string&quot;
+        },
+        {
+          &quot;name&quot;: &quot;trucks.truckyear&quot;,
+          &quot;value&quot;: &quot;2002&quot;,
+          &quot;type&quot;: &quot;long&quot;
+        },
+        {
+          &quot;name&quot;: &quot;trucks.truckmileageinkms&quot;,
+          &quot;value&quot;: &quot;342064&quot;,
+          &quot;type&quot;: &quot;long&quot;
+        }
+      ],
+      &quot;searchOrchestrationAttributes&quot;: {},
+      &quot;similarItemsLink&quot;: &quot;https://ecg-api.gumtree.com.au/api/papi/ads/search/1283495771/similar-items&quot;,
+      &quot;featureList&quot;: [
+        {
+          &quot;name&quot;: &quot;B2C_PACKAGE_3&quot;,
+          &quot;display&quot;: false
+        },
+        {
+          &quot;name&quot;: &quot;AD_LISTING_FEE&quot;,
+          &quot;display&quot;: false
+        },
+        {
+          &quot;name&quot;: &quot;AD_RECURRING_BUMP_UP&quot;,
+          &quot;display&quot;: false
+        },
+        {
+          &quot;name&quot;: &quot;SUPER_PREMIUM_AD&quot;,
+          &quot;display&quot;: false
+        },
+        {
+          &quot;name&quot;: &quot;AD_GP_TOP_AD&quot;,
+          &quot;display&quot;: true
+        }
+      ]
+    },
+    {
+      &quot;id&quot;: 1285179692,
+      &quot;title&quot;: &quot;Bar Helper&quot;,
+      &quot;description&quot;: &quot;JOB SUMMARY: Responsible for keeping the bar and pass area clean and odour free. Also responsible ...&quot;,
+      &quot;categoryId&quot;: 18492,
+      &quot;locationId&quot;: 3003772,
+      &quot;price&quot;: {},
+      &quot;adType&quot;: &quot;OFFERED&quot;,
+      &quot;posterType&quot;: &quot;PRIVATE&quot;,
+      &quot;creationDate&quot;: &quot;2021-11-19T15:21:09.000+11:00&quot;,
+      &quot;startDate&quot;: &quot;2021-11-19T15:21:11.000+11:00&quot;,
+      &quot;endDate&quot;: &quot;2021-12-19T15:21:11.000+11:00&quot;,
+      &quot;pictures&quot;: [],
+      &quot;attributes&quot;: [
+        {
+          &quot;name&quot;: &quot;bar_beverage_staff.minimumsalary&quot;,
+          &quot;value&quot;: &quot;20&quot;,
+          &quot;type&quot;: &quot;long&quot;
+        },
+        {
+          &quot;name&quot;: &quot;bar_beverage_staff.maximumsalary&quot;,
+          &quot;value&quot;: &quot;30&quot;,
+          &quot;type&quot;: &quot;long&quot;
+        },
+        {
+          &quot;name&quot;: &quot;bar_beverage_staff.jobtype&quot;,
+          &quot;value&quot;: &quot;Casual&quot;,
+          &quot;type&quot;: &quot;enum&quot;
+        },
+        {
+          &quot;name&quot;: &quot;bar_beverage_staff.salarytype&quot;,
+          &quot;value&quot;: &quot;Hourly Rate&quot;,
+          &quot;type&quot;: &quot;enum&quot;
+        }
+      ],
+      &quot;searchOrchestrationAttributes&quot;: {},
+      &quot;similarItemsLink&quot;: &quot;https://ecg-api.gumtree.com.au/api/papi/ads/search/1285179692/similar-items&quot;,
+      &quot;featureList&quot;: []
+    },
+    {
+      &quot;id&quot;: 1285179521,
+      &quot;title&quot;: &quot;Replica Eileen Gray chrome&amp;glass side table&quot;,
+      &quot;description&quot;: &quot;Classic 1920&#39;s full art deco style side table by Eileen Gray.\r\n\r\nDiameter- 50cm,  Height to table ...&quot;,
+      &quot;categoryId&quot;: 21011,
+      &quot;locationId&quot;: 3003644,
+      &quot;price&quot;: {
+        &quot;amount&quot;: 80.0,
+        &quot;priceType&quot;: &quot;SPECIFIED_AMOUNT&quot;,
+        &quot;highestPrice&quot;: 80.0
+      },
+      &quot;adType&quot;: &quot;OFFERED&quot;,
+      &quot;posterType&quot;: &quot;PRIVATE&quot;,
+      &quot;creationDate&quot;: &quot;2021-11-19T15:19:13.000+11:00&quot;,
+      &quot;startDate&quot;: &quot;2021-11-19T15:19:16.000+11:00&quot;,
+      &quot;endDate&quot;: &quot;2021-12-19T15:19:16.000+11:00&quot;,
+      &quot;pictures&quot;: [
+        [
+          {
+            &quot;size&quot;: &quot;thumbnail&quot;,
+            &quot;pictureUrl&quot;: &quot;https://i.ebayimg.com/images/g/8VYAAOSwEm9hlyUJ/s-l64.jpg&quot;
+          },
+          {
+            &quot;size&quot;: &quot;normal&quot;,
+            &quot;pictureUrl&quot;: &quot;https://i.ebayimg.com/images/g/8VYAAOSwEm9hlyUJ/s-l135.jpg&quot;
+          },
+          {
+            &quot;size&quot;: &quot;large&quot;,
+            &quot;pictureUrl&quot;: &quot;https://i.ebayimg.com/images/g/8VYAAOSwEm9hlyUJ/s-l400.jpg&quot;
+          },
+          {
+            &quot;size&quot;: &quot;extralarge&quot;,
+            &quot;pictureUrl&quot;: &quot;https://i.ebayimg.com/images/g/8VYAAOSwEm9hlyUJ/s-l800.jpg&quot;
+          },
+          {
+            &quot;size&quot;: &quot;extraextralarge&quot;,
+            &quot;pictureUrl&quot;: &quot;https://i.ebayimg.com/images/g/8VYAAOSwEm9hlyUJ/s-l1600.jpg&quot;
+          }
+        ]
+      ],
+      &quot;attributes&quot;: [],
+      &quot;searchOrchestrationAttributes&quot;: {},
+      &quot;similarItemsLink&quot;: &quot;https://ecg-api.gumtree.com.au/api/papi/ads/search/1285179521/similar-items&quot;,
+      &quot;featureList&quot;: []
+    },
+    {
+      &quot;id&quot;: 1285179464,
+      &quot;title&quot;: &quot;Freedom Larsson Dining Table&quot;,
+      &quot;description&quot;: &quot;5 years old but in very good condition! Originally bought from Freedom and details of the dining ...&quot;,
+      &quot;categoryId&quot;: 20080,
+      &quot;locationId&quot;: 3003782,
+      &quot;price&quot;: {
+        &quot;amount&quot;: 200.0,
+        &quot;priceType&quot;: &quot;PLEASE_CONTACT&quot;,
+        &quot;highestPrice&quot;: 200.0
+      },
+      &quot;adType&quot;: &quot;OFFERED&quot;,
+      &quot;posterType&quot;: &quot;PRIVATE&quot;,
+      &quot;creationDate&quot;: &quot;2021-11-19T15:18:24.000+11:00&quot;,
+      &quot;startDate&quot;: &quot;2021-11-19T15:18:29.000+11:00&quot;,
+      &quot;endDate&quot;: &quot;2021-12-19T15:18:29.000+11:00&quot;,
+      &quot;pictures&quot;: [
+        [
+          {
+            &quot;size&quot;: &quot;thumbnail&quot;,
+            &quot;pictureUrl&quot;: &quot;https://i.ebayimg.com/images/g/nHEAAOSwvUVhlyVD/s-l64.jpg&quot;
+          },
+          {
+            &quot;size&quot;: &quot;normal&quot;,
+            &quot;pictureUrl&quot;: &quot;https://i.ebayimg.com/images/g/nHEAAOSwvUVhlyVD/s-l135.jpg&quot;
+          },
+          {
+            &quot;size&quot;: &quot;large&quot;,
+            &quot;pictureUrl&quot;: &quot;https://i.ebayimg.com/images/g/nHEAAOSwvUVhlyVD/s-l400.jpg&quot;
+          },
+          {
+            &quot;size&quot;: &quot;extralarge&quot;,
+            &quot;pictureUrl&quot;: &quot;https://i.ebayimg.com/images/g/nHEAAOSwvUVhlyVD/s-l800.jpg&quot;
+          },
+          {
+            &quot;size&quot;: &quot;extraextralarge&quot;,
+            &quot;pictureUrl&quot;: &quot;https://i.ebayimg.com/images/g/nHEAAOSwvUVhlyVD/s-l1600.jpg&quot;
+          }
+        ]
+      ],
+      &quot;attributes&quot;: [
+        {
+          &quot;name&quot;: &quot;home_garden.covid_19_safety&quot;,
+          &quot;value&quot;: &quot;Contactless trade&quot;,
+          &quot;type&quot;: &quot;enum&quot;
+        }
+      ],
+      &quot;searchOrchestrationAttributes&quot;: {},
+      &quot;similarItemsLink&quot;: &quot;https://ecg-api.gumtree.com.au/api/papi/ads/search/1285179464/similar-items&quot;,
+      &quot;featureList&quot;: []
+    },
+    {
+      &quot;id&quot;: 1285179397,
+      &quot;title&quot;: &quot;1 Light Wood and Grey Steel Dining Table with Matching Chairs&quot;,
+      &quot;description&quot;: &quot;1 Light Wood and Grey Steel Dining Table with Matching Chairs\r\n\r\n1 Light Wood and Grey Steel Dining ...&quot;,
+      &quot;categoryId&quot;: 20080,
+      &quot;locationId&quot;: 3003653,
+      &quot;price&quot;: {
+        &quot;amount&quot;: 200.0,
+        &quot;priceType&quot;: &quot;PLEASE_CONTACT&quot;,
+        &quot;highestPrice&quot;: 200.0
+      },
+      &quot;adType&quot;: &quot;OFFERED&quot;,
+      &quot;posterType&quot;: &quot;PRIVATE&quot;,
+      &quot;creationDate&quot;: &quot;2021-11-19T15:17:21.000+11:00&quot;,
+      &quot;startDate&quot;: &quot;2021-11-19T15:17:32.000+11:00&quot;,
+      &quot;endDate&quot;: &quot;2021-12-19T15:17:32.000+11:00&quot;,
+      &quot;pictures&quot;: [
+        [
+          {
+            &quot;size&quot;: &quot;thumbnail&quot;,
+            &quot;pictureUrl&quot;: &quot;https://i.ebayimg.com/images/g/bn0AAOSw2S1hlyUU/s-l64.jpg&quot;
+          },
+          {
+            &quot;size&quot;: &quot;normal&quot;,
+            &quot;pictureUrl&quot;: &quot;https://i.ebayimg.com/images/g/bn0AAOSw2S1hlyUU/s-l135.jpg&quot;
+          },
+          {
+            &quot;size&quot;: &quot;large&quot;,
+            &quot;pictureUrl&quot;: &quot;https://i.ebayimg.com/images/g/bn0AAOSw2S1hlyUU/s-l400.jpg&quot;
+          },
+          {
+            &quot;size&quot;: &quot;extralarge&quot;,
+            &quot;pictureUrl&quot;: &quot;https://i.ebayimg.com/images/g/bn0AAOSw2S1hlyUU/s-l800.jpg&quot;
+          },
+          {
+            &quot;size&quot;: &quot;extraextralarge&quot;,
+            &quot;pictureUrl&quot;: &quot;https://i.ebayimg.com/images/g/bn0AAOSw2S1hlyUU/s-l1600.jpg&quot;
+          }
+        ]
+      ],
+      &quot;attributes&quot;: [],
+      &quot;searchOrchestrationAttributes&quot;: {},
+      &quot;similarItemsLink&quot;: &quot;https://ecg-api.gumtree.com.au/api/papi/ads/search/1285179397/similar-items&quot;,
+      &quot;featureList&quot;: []
+    },
+    {
+      &quot;id&quot;: 1285179157,
+      &quot;title&quot;: &quot;1 Single Solid Wood White Bed with Wood Slates&quot;,
+      &quot;description&quot;: &quot;1 Single Solid Wood White Bed with Wood Slates\r\n\r\n1 Single Solid Wood White Bed with Wood ...&quot;,
+      &quot;categoryId&quot;: 20074,
+      &quot;locationId&quot;: 3003653,
+      &quot;price&quot;: {
+        &quot;amount&quot;: 150.0,
+        &quot;priceType&quot;: &quot;PLEASE_CONTACT&quot;,
+        &quot;highestPrice&quot;: 150.0
+      },
+      &quot;adType&quot;: &quot;OFFERED&quot;,
+      &quot;posterType&quot;: &quot;PRIVATE&quot;,
+      &quot;creationDate&quot;: &quot;2021-11-19T15:14:04.000+11:00&quot;,
+      &quot;startDate&quot;: &quot;2021-11-19T15:14:14.000+11:00&quot;,
+      &quot;endDate&quot;: &quot;2021-12-19T15:14:14.000+11:00&quot;,
+      &quot;pictures&quot;: [
+        [
+          {
+            &quot;size&quot;: &quot;thumbnail&quot;,
+            &quot;pictureUrl&quot;: &quot;https://i.ebayimg.com/images/g/GrYAAOSwpnphlyQ9/s-l64.jpg&quot;
+          },
+          {
+            &quot;size&quot;: &quot;normal&quot;,
+            &quot;pictureUrl&quot;: &quot;https://i.ebayimg.com/images/g/GrYAAOSwpnphlyQ9/s-l135.jpg&quot;
+          },
+          {
+            &quot;size&quot;: &quot;large&quot;,
+            &quot;pictureUrl&quot;: &quot;https://i.ebayimg.com/images/g/GrYAAOSwpnphlyQ9/s-l400.jpg&quot;
+          },
+          {
+            &quot;size&quot;: &quot;extralarge&quot;,
+            &quot;pictureUrl&quot;: &quot;https://i.ebayimg.com/images/g/GrYAAOSwpnphlyQ9/s-l800.jpg&quot;
+          },
+          {
+            &quot;size&quot;: &quot;extraextralarge&quot;,
+            &quot;pictureUrl&quot;: &quot;https://i.ebayimg.com/images/g/GrYAAOSwpnphlyQ9/s-l1600.jpg&quot;
+          }
+        ]
+      ],
+      &quot;attributes&quot;: [
+        {
+          &quot;name&quot;: &quot;hg_furniture_beds.mattress-included&quot;,
+          &quot;value&quot;: &quot;Yes&quot;,
+          &quot;type&quot;: &quot;enum&quot;
+        },
+        {
+          &quot;name&quot;: &quot;hg_furniture_beds.mattress-firmness&quot;,
+          &quot;value&quot;: &quot;Medium Firm&quot;,
+          &quot;type&quot;: &quot;enum&quot;
+        }
+      ],
+      &quot;searchOrchestrationAttributes&quot;: {},
+      &quot;similarItemsLink&quot;: &quot;https://ecg-api.gumtree.com.au/api/papi/ads/search/1285179157/similar-items&quot;,
+      &quot;featureList&quot;: []
+    },
+    {
+      &quot;id&quot;: 1285179012,
+      &quot;title&quot;: &quot;1 Queen Bed Light Wood Frame, Slate Base and Mattress&quot;,
+      &quot;description&quot;: &quot;1 Queen Bed Light Wood Frame, Slate Base and Mattress\r\n\r\n1 Queen Bed Light Solid Wood, Slate Base ...&quot;,
+      &quot;categoryId&quot;: 20074,
+      &quot;locationId&quot;: 3003653,
+      &quot;price&quot;: {
+        &quot;amount&quot;: 150.0,
+        &quot;priceType&quot;: &quot;PLEASE_CONTACT&quot;,
+        &quot;highestPrice&quot;: 150.0
+      },
+      &quot;adType&quot;: &quot;OFFERED&quot;,
+      &quot;posterType&quot;: &quot;PRIVATE&quot;,
+      &quot;creationDate&quot;: &quot;2021-11-19T15:11:26.000+11:00&quot;,
+      &quot;startDate&quot;: &quot;2021-11-19T15:11:38.000+11:00&quot;,
+      &quot;endDate&quot;: &quot;2021-12-19T15:11:38.000+11:00&quot;,
+      &quot;pictures&quot;: [
+        [
+          {
+            &quot;size&quot;: &quot;thumbnail&quot;,
+            &quot;pictureUrl&quot;: &quot;https://i.ebayimg.com/images/g/gGQAAOSw1SBhlyOu/s-l64.jpg&quot;
+          },
+          {
+            &quot;size&quot;: &quot;normal&quot;,
+            &quot;pictureUrl&quot;: &quot;https://i.ebayimg.com/images/g/gGQAAOSw1SBhlyOu/s-l135.jpg&quot;
+          },
+          {
+            &quot;size&quot;: &quot;large&quot;,
+            &quot;pictureUrl&quot;: &quot;https://i.ebayimg.com/images/g/gGQAAOSw1SBhlyOu/s-l400.jpg&quot;
+          },
+          {
+            &quot;size&quot;: &quot;extralarge&quot;,
+            &quot;pictureUrl&quot;: &quot;https://i.ebayimg.com/images/g/gGQAAOSw1SBhlyOu/s-l800.jpg&quot;
+          },
+          {
+            &quot;size&quot;: &quot;extraextralarge&quot;,
+            &quot;pictureUrl&quot;: &quot;https://i.ebayimg.com/images/g/gGQAAOSw1SBhlyOu/s-l1600.jpg&quot;
+          }
+        ]
+      ],
+      &quot;attributes&quot;: [
+        {
+          &quot;name&quot;: &quot;hg_furniture_beds.size&quot;,
+          &quot;value&quot;: &quot;Queen&quot;,
+          &quot;type&quot;: &quot;enum&quot;
+        },
+        {
+          &quot;name&quot;: &quot;hg_furniture_beds.mattress-included&quot;,
+          &quot;value&quot;: &quot;Yes&quot;,
+          &quot;type&quot;: &quot;enum&quot;
+        },
+        {
+          &quot;name&quot;: &quot;hg_furniture_beds.mattress-firmness&quot;,
+          &quot;value&quot;: &quot;Medium Firm&quot;,
+          &quot;type&quot;: &quot;enum&quot;
+        }
+      ],
+      &quot;searchOrchestrationAttributes&quot;: {},
+      &quot;similarItemsLink&quot;: &quot;https://ecg-api.gumtree.com.au/api/papi/ads/search/1285179012/similar-items&quot;,
+      &quot;featureList&quot;: []
+    }
+  ],
+  &quot;paging&quot;: {
+    &quot;links&quot;: [
+      {
+        &quot;rel&quot;: &quot;selfLink&quot;,
+        &quot;url&quot;: &quot;https://ecg-api.gumtree.com.au/api/papi/ads/search?keyword=Table&amp;locationId=3003435&amp;pictureRequired=false&amp;includeTopAds=true&amp;categoryId=0&amp;sortType=DATE_DESCENDING&amp;page=1&amp;size=20&amp;_ver=1.52&quot;
+      },
+      {
+        &quot;rel&quot;: &quot;selfPagePublicWebsite&quot;,
+        &quot;url&quot;: &quot;https://ecg-api.gumtree.com.au/s-sydney/table/page-1/k0l3003435?sort=date&quot;
+      }
+    ],
+    &quot;numFound&quot;: 20533
+  },
+  &quot;adSearchOptions&quot;: {
+    &quot;keyword&quot;: &quot;Table&quot;,
+    &quot;locationId&quot;: 3003435,
+    &quot;categoryId&quot;: 0,
+    &quot;categoryRedirected&quot;: false
+  }
+}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref passed">7</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref passed">8</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match responseType == &#39;json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">86</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref passed">9</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match responseHeaders[&#39;Server&#39;][0] == &#39;rhino-core-shield&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">36</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref passed">10</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match responseHeaders[&#39;Content-Type&#39;][0] == &#39;application/json;charset=UTF-8&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.11">
+      <div class="step-ref passed">11</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print response.ads[0]</span>
+      </div>
+    </div>
+    <div class="time-cell passed">133</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.11">16:18:33.712 [print] {
+  &quot;id&quot;: 1285000152,
+  &quot;title&quot;: &quot;Square High Dining Setting 8 person - Brand New Ex-Display&quot;,
+  &quot;description&quot;: &quot;Brand New ex-showroom high dining setting for sale.\r\nSet includes 1 x table and 8 x ...&quot;,
+  &quot;categoryId&quot;: 20080,
+  &quot;locationId&quot;: 3003689,
+  &quot;price&quot;: {
+    &quot;amount&quot;: 1500.0,
+    &quot;priceType&quot;: &quot;SPECIFIED_AMOUNT&quot;,
+    &quot;highestPrice&quot;: 1500.0
+  },
+  &quot;adType&quot;: &quot;OFFERED&quot;,
+  &quot;posterType&quot;: &quot;PRIVATE&quot;,
+  &quot;creationDate&quot;: &quot;2021-11-16T13:58:34.000+11:00&quot;,
+  &quot;startDate&quot;: &quot;2021-11-16T13:58:50.000+11:00&quot;,
+  &quot;endDate&quot;: &quot;2021-12-16T13:58:50.000+11:00&quot;,
+  &quot;pictures&quot;: [
+    [
+      {
+        &quot;size&quot;: &quot;thumbnail&quot;,
+        &quot;pictureUrl&quot;: &quot;https://i.ebayimg.com/images/g/bfQAAOSwItphkx3s/s-l64.jpg&quot;
+      },
+      {
+        &quot;size&quot;: &quot;normal&quot;,
+        &quot;pictureUrl&quot;: &quot;https://i.ebayimg.com/images/g/bfQAAOSwItphkx3s/s-l135.jpg&quot;
+      },
+      {
+        &quot;size&quot;: &quot;large&quot;,
+        &quot;pictureUrl&quot;: &quot;https://i.ebayimg.com/images/g/bfQAAOSwItphkx3s/s-l400.jpg&quot;
+      },
+      {
+        &quot;size&quot;: &quot;extralarge&quot;,
+        &quot;pictureUrl&quot;: &quot;https://i.ebayimg.com/images/g/bfQAAOSwItphkx3s/s-l800.jpg&quot;
+      },
+      {
+        &quot;size&quot;: &quot;extraextralarge&quot;,
+        &quot;pictureUrl&quot;: &quot;https://i.ebayimg.com/images/g/bfQAAOSwItphkx3s/s-l1600.jpg&quot;
+      }
+    ]
+  ],
+  &quot;attributes&quot;: [
+    {
+      &quot;name&quot;: &quot;home_garden.covid_19_safety&quot;,
+      &quot;value&quot;: &quot;Contactless trade&quot;,
+      &quot;type&quot;: &quot;enum&quot;
+    }
+  ],
+  &quot;searchOrchestrationAttributes&quot;: {
+  },
+  &quot;similarItemsLink&quot;: &quot;https://ecg-api.gumtree.com.au/api/papi/ads/search/1285000152/similar-items&quot;,
+  &quot;featureList&quot;: [
+    {
+      &quot;name&quot;: &quot;AD_GP_TOP_AD&quot;,
+      &quot;display&quot;: true
+    }
+  ]
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.12">
+      <div class="step-ref passed">12</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match each response.ads contains {&quot;id&quot; : &quot;#number&quot;}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">45</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

@@ -3,8 +3,15 @@
   <groupId>com.gumtree</groupId>
   <artifactId>webTest</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  <name>Web Test Gumtree</name>
-  <description>Selenium webtest example using maven and testNG</description>
+  <name>Gumtree Web and Karate test</name>
+  <description>Selenium webtest and karate example using maven and testNG</description>
+   <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <java.version>1.8</java.version>
+        <maven.compiler.version>3.8.1</maven.compiler.version>
+        <maven.surefire.version>2.22.2</maven.surefire.version>        
+        <karate.version>1.1.0</karate.version>
+    </properties> 
   <dependencies>
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
@@ -16,6 +23,43 @@
 			<artifactId>testng</artifactId>
 			<version>7.4.0</version>
 			<scope>test</scope>
-		</dependency>
-</dependencies>
+		</dependency>        
+        <dependency>
+            <groupId>com.intuit.karate</groupId>
+            <artifactId>karate-junit5</artifactId>
+            <version>${karate.version}</version>
+            <scope>test</scope>
+        </dependency>		
+    </dependencies>
+    <build>
+        <testResources>
+            <testResource>
+                <directory>src/test/java</directory>
+                <excludes>
+                    <exclude>**/*.java</exclude>
+                </excludes>
+            </testResource>
+        </testResources>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>${maven.compiler.version}</version>
+                <configuration>
+                    <encoding>UTF-8</encoding>
+                    <source>${java.version}</source>
+                    <target>${java.version}</target>
+                    <compilerArgument>-Werror</compilerArgument>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>${maven.surefire.version}</version>
+                <configuration>
+                    <argLine>-Dfile.encoding=UTF-8</argLine>
+                </configuration>
+            </plugin>          
+        </plugins>        
+    </build>       
 </project>
