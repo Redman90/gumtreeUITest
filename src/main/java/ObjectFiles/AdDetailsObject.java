@@ -19,7 +19,10 @@ public class AdDetailsObject extends BaseObject {
 	{
 		try
 		{
+			if (this.isElementVisible(lstOtherAds, "Slidable Ads"))
+			{
 			List<WebElement> ads = driver.findElements(lstOtherAds);
+			System.out.println("Ads length is : "+ads.size());
 			if(ads.size()>0) {
 				System.out.println("Other ads present in ad results page");
 			  return true;
@@ -27,6 +30,10 @@ public class AdDetailsObject extends BaseObject {
 			{
 				System.out.println("Other ads not present in ad results page");
 				return false;
+			}
+			} else
+			{System.out.println("Element not visible : "+lstOtherAds);
+			 return false;
 			}
 		}catch (Exception e) {
 			System.out.println("Error getting similar ads. Exception is "+e.getMessage());

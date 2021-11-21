@@ -2,21 +2,14 @@ package TestScripts;
 
 import org.testng.annotations.Test;
 import org.testng.AssertJUnit;
-import org.testng.annotations.Test;
 
 import ObjectFiles.AdDetailsObject;
 import ObjectFiles.HeaderObject;
 import ObjectFiles.SearchResultObject;
 
 import org.testng.annotations.BeforeMethod;
-
-import java.util.concurrent.TimeUnit;
-
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 
 public class checkGumtreeExample {

@@ -22,15 +22,21 @@ public class SearchResultObject extends BaseObject{
 	{
 		try
 		{
-			List<WebElement> results = driver.findElements(lnkResult);
-			
-			int maxResults = results.size();
-			// get random number
-			Random random = new Random();
-			int randomResult = random.nextInt(maxResults);
-			
-			// select said random result
-			results.get(randomResult).click();
+			if (this.isElementVisible(lnkResult, "Result links"))
+			{
+				List<WebElement> results = driver.findElements(lnkResult);
+				
+				int maxResults = results.size();
+				// get random number
+				Random random = new Random();
+				int randomResult = random.nextInt(maxResults);
+				
+				// select said random result
+				results.get(randomResult).click();
+			} else 
+			{
+				System.out.println("Element not visible : "+lnkResult);
+			}
 			
 		}catch (Exception e) {
 			System.out.println("Error selecting random result. Exception is "+e.getMessage());
