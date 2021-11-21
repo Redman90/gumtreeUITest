@@ -17,7 +17,7 @@ Selenium webdriver used in a maven project along with testNG.
 Task2: API Test:
 Write a test for the route
 https://ecg-api.gumtree.com.au/api/papi/ads/search?
-categoryId=0&categoryRedirected=1&includeTopAds=1&keyword=Table&locationId=3003435&page=1&size=20&sortType=DATE_D
+categoryId=0&categoryRedirected=1&includeTopAds=1&keyword=Table&locationId=3003435&page=1&size=20&sortType=DATE_DESCENDING
 Validate the response type, response code, headers and some of the data displayed.
 
 
